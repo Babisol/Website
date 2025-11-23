@@ -52,6 +52,6 @@
   background-color: var(--body-color);
   box-shadow: var(--shadow);
   color: var(--text-color);
-  /* cursor: pointer; */
+  cursor: pointer;
   transition: 0.3s;
 }

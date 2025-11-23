@@ -10,66 +10,6 @@ interface QualificationData {
   calendar: string;
 }
 
-const educationData: QualificationData[] = [
-  {
-    title: "Full-stack development",
-    subtitle: "Mate academy. Full-stack developer course",
-    calendar: "02.2024 - 2025",
-  },
-  {
-    title: "Full Stack Open",
-    subtitle:
-      "The University of Helsinki. Deep Dive Into Modern Web Development",
-    calendar: "06.2023 - 02.2024",
-  },
-  {
-    title: "Fullstack Web Development",
-    subtitle: "Zero To Mastery Academy. Fullstack Web Developer Career Path",
-    calendar: "10.2022 - 01.2023",
-  },
-  {
-    title: "Frontend Development",
-    subtitle: "Scrimba. The Frontend Developer Career Path",
-    calendar: "06.2022 - 09.2022",
-  },
-  {
-    title: "CS50",
-    subtitle: "CS50's Introduction to Computer Science",
-    calendar: "01.2022 - 05.2022",
-  },
-  {
-    title: "PHD in Bioorganic Chemistry",
-    subtitle:
-      "Ukraine - Institute of Bioorganic Chemistry and Petrochemistry of National Academy of Sciences of Ukraine",
-    calendar: "2015 - 2019",
-  },
-  {
-    title: "Biologist. Chemist",
-    subtitle: "Ukraine - Nizhyn State Gogol University",
-    calendar: "2009 - 2015",
-  },
-];
-
-const experienceData: QualificationData[] = [
-  {
-    title: "Micro-SaaS freelancer",
-    subtitle: "- Ukraine -",
-    calendar: "06.2024 - Present",
-  },
-  {
-    title: "Researcher",
-    subtitle:
-      "Ukraine - Institute of Bioorganic Chemistry and Petrochemistry of National Academy of Sciences of Ukraine",
-    calendar: "2019 - 2022",
-  },
-  {
-    title: "PHD Student",
-    subtitle:
-      "Ukraine - Institute of Bioorganic Chemistry and Petrochemistry of National Academy of Sciences of Ukraine",
-    calendar: "2015 - 2019",
-  },
-];
-
 interface QualificationSectionProps {
   data: QualificationData[];
 }
@@ -113,6 +53,14 @@ function QualificationSection({ data }: QualificationSectionProps) {
 export default function Qualification() {
   const [toggleState, setToggleState] = useState<number>(1);
   const { t } = useTranslation();
+
+  const educationData = t("qualification.educationItems", {
+    returnObjects: true,
+  }) as QualificationData[];
+
+  const experienceData = t("qualification.experienceItems", {
+    returnObjects: true,
+  }) as QualificationData[];
 
   function toggleTab(index: number) {
     setToggleState(index);

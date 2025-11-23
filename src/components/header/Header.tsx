@@ -16,7 +16,7 @@ const navItems: NavItem[] = [
   { href: "#home", icon: "uil:estate", label: "home" },
   { href: "#about", icon: "uil:user", label: "about" },
   { href: "#skills", icon: "uil:file-alt", label: "skills" },
-  { href: "#portfolio", icon: "uil:scenery", label: "portfolio" },
+  // { href: "#portfolio", icon: "uil:scenery", label: "portfolio" },
   { href: "#contact", icon: "uil:message", label: "contact" },
 ];
 

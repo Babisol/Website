@@ -11,7 +11,7 @@
   font-weight: var(--font-medium);
   border: none;
   border-radius: 0.3rem;
-  /* cursor: pointer; */
+  cursor: pointer;
   position: relative;
   display: flex;
   align-items: center;
@@ -76,7 +76,7 @@
 
 .nav__dropdown-content div:hover {
   color: var(--active-color);
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .nav__dropdown-content.active {

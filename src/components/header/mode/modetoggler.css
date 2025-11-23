@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     padding: 0 0.05rem;
-    /* cursor: pointer; */
+    cursor: pointer;
     transition: 0.5s;
 }
 .dark-mode .mode-toggler {

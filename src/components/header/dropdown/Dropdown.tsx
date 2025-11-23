@@ -5,11 +5,11 @@ import "./dropdown.css";
 export default function Dropdown() {
   const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
-  const currentLanguage = i18n.language === "en" ? "ENG" : "UA";
-  const chosenLang = currentLanguage === "ENG" ? "UA" : "ENG";
+  const currentLanguage = i18n.language === "en" ? "ENG" : "DE";
+  const chosenLang = currentLanguage === "ENG" ? "DE" : "ENG";
 
   const handleLanguageChange = () => {
-    const newLang = currentLanguage === "ENG" ? "ua" : "en";
+    const newLang = currentLanguage === "ENG" ? "de" : "en";
     i18n.changeLanguage(newLang);
     setOpen(false);
   };

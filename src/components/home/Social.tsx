@@ -8,34 +8,19 @@ interface SocialLink {
 
 const socialLinks: SocialLink[] = [
   {
-    href: "https://www.linkedin.com/in/vladyslav-buldenko-a94a181ab",
+    href: "https://www.linkedin.com/in/babak-soleymani-a471311b0",
     icon: "uil:linkedin",
     label: "LinkedIn",
   },
   {
-    href: "https://www.instagram.com/walderwin",
+    href: "https://www.instagram.com/babak.gs",
     icon: "uil:instagram",
     label: "Instagram",
   },
   {
-    href: "https://www.facebook.com/vladbuldenko",
-    icon: "uil:facebook-messenger-alt",
-    label: "Facebook",
-  },
-  {
-    href: "https://github.com/vbuldenko",
+    href: "https://github.com/babisol",
     icon: "uil:github-alt",
     label: "GitHub",
-  },
-  {
-    href: "https://x.com/walderviron",
-    icon: "uil:twitter-alt",
-    label: "Twitter",
-  },
-  {
-    href: "https://t.me/waldeviron",
-    icon: "uil:telegram-alt",
-    label: "Telegram",
   },
 ];
 
