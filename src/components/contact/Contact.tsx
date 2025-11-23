@@ -13,6 +13,12 @@ interface ContactCardProps {
 
 const ContactCard = ({ icon, title, href }: ContactCardProps) => {
   const { t } = useTranslation();
+  let isInstagram: boolean = false;
+
+  if (title === "Instagram") {
+    isInstagram = true;
+  }
+  console.log("isInstagram changed to", isInstagram);
   return (
     <div className="contact__card">
       <Icon icon={icon} className="contact__card-icon" />
@@ -23,7 +29,7 @@ const ContactCard = ({ icon, title, href }: ContactCardProps) => {
         rel="noopener noreferrer"
         className="contact__button"
       >
-        {t("contacts.write")}
+        {isInstagram ? t("contacts.instagram-follow-me") : t("contacts.write")}
         <Icon icon="bx:bx-right-arrow-alt" className="contact__button-icon" />
       </a>
     </div>
@@ -33,17 +39,17 @@ const contactCards = [
   {
     icon: "bxl:gmail",
     title: "Email",
-    href: "mailto:vladbuldenko@gmail.com",
+    href: "mailto:babak.soleymani2017@gmail.com",
   },
   {
     icon: "bxl:telegram",
     title: "Telegram",
-    href: "https://t.me/waldeviron",
+    href: "https://t.me/babak_gs",
   },
   {
-    icon: "bxl:facebook",
-    title: "Facebook",
-    href: "https://www.facebook.com/vladbuldenko/",
+    icon: "bxl:instagram",
+    title: "Instagram",
+    href: "https://www.instagram.com/babak.gs",
   },
 ];
 

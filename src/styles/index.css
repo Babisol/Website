@@ -61,18 +61,25 @@
 :root.dark-mode {
   /* Dark Color Scheme */
   --title-color: rgba(255, 255, 255, 0.95);
-  --title-color-dark: rgba(176, 198, 255, 0.573);
-  --text-color: rgb(201, 201, 201);
-  --body-color: rgb(97, 88, 88);
-  --body-color: rgb(75, 92, 108);
-  --active-color: rgba(222, 222, 149, 0.9);
-  --container-color: rgb(43, 56, 69);
-  --shadow: 0 0 4px rgba(255, 255, 255, 0.1);
-    --accent: #8bd3ff;
-  --accent-2: #9b8bff;
-  --blob-opacity: 0.45;
+  --title-color-dark: rgba(176, 198, 255, 0.8);
+  --text-color: rgb(214, 219, 235);
+  --body-color: #050816;              /* darker = better neon contrast */
+  --active-color: rgba(255, 223, 127, 0.95);
+  --container-color: #0b1220;
+  --shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+
+  /* Neon accents */
+  --accent: #36e4ff;      /* electric cyan */
+  --accent-2: #c084ff;    /* neon purple */
+  --blob-opacity: 0.7;
   --blob-blend: screen;
 }
+
+
+
+
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -267,17 +274,125 @@ img {
   position: fixed;
   left: 0;
   top: 0;
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
   pointer-events: none;
-  filter: blur(60px);
-  opacity: var(--blob-opacity);
   transform: translate(-50%, -50%) scale(1);
-  background: radial-gradient(circle at 30% 30%, var(--accent), transparent 60%),
-              radial-gradient(circle at 70% 70%, var(--accent-2), transparent 60%);
-  mix-blend-mode: var(--blob-blend);
+  filter: blur(70px);
+  opacity: var(--blob-opacity, 0.6);
+
+  background:
+    radial-gradient(circle at 30% 30%, var(--accent), transparent 60%),
+    radial-gradient(circle at 70% 70%, var(--accent-2), transparent 65%);
+
+  mix-blend-mode: var(--blob-blend, screen);
   z-index: 9999;
-  transition: opacity 0.3s ease, background 0.3s ease;
+
+  box-shadow:
+    0 0 60px rgba(54, 228, 255, 0.75),
+    0 0 120px rgba(192, 132, 255, 0.75);
+
+  transition:
+    opacity 0.3s ease,
+    background 0.3s ease,
+    filter 0.3s ease;
 }
+/* === Storm overlay base (as before) === */
+.storm-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 20; /* below cursor blob, above background */
+}
+
+/* === Raindrops (as before) === */
+.storm-raindrop {
+  position: absolute;
+  top: -120px;
+  width: 1.5px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0)
+  );
+  animation-name: storm-rain-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes storm-rain-fall {
+  to {
+    transform: translate3d(0, 120vh, 0);
+  }
+}
+
+/* === Lightning flash wash === */
+.storm-lightning-flash {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(255, 255, 255, 0.35), transparent 55%),
+    radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.3), transparent 60%),
+    radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.18), transparent 65%);
+  mix-blend-mode: screen;
+  transition: opacity 0.12s ease-out;
+  opacity: 0;
+}
+
+/* === Diagonal lightning bolt === */
+.storm-bolt {
+  position: absolute;
+  top: -20%;
+  right: -10%;           /* start a bit off-screen top-right */
+  width: 4px;
+  height: 140vh;         /* long enough to cross the screen */
+  pointer-events: none;
+
+  /* core bolt shape: bright center + glow */
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 25%,
+      rgba(255, 255, 255, 0.9) 45%,
+      rgba(255, 255, 255, 0.4) 65%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+  filter:
+    drop-shadow(0 0 12px rgba(255, 255, 255, 0.8))
+    drop-shadow(0 0 28px rgba(255, 255, 255, 0.6));
+
+  transform-origin: top right;
+  transform: rotate(-45deg) scaleY(0);
+
+  animation: storm-bolt-strike 0.18s ease-out forwards;
+}
+
+@keyframes storm-bolt-strike {
+  0% {
+    opacity: 0;
+    transform: rotate(-45deg) scaleY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: rotate(-45deg) scaleY(1.05);
+  }
+  60% {
+    opacity: 0.9;
+    transform: rotate(-45deg) scaleY(0.95);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(-45deg) scaleY(0.8);
+  }
+}
+
+
+
+
 

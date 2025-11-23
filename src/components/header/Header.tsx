@@ -45,7 +45,7 @@ export default function Header() {
     <header className="header">
       <nav className="nav container">
         <a href="#" className="nav__logo">
-          VMB
+          Babak Soleimani
         </a>
         <div className={clsx("nav__menu", { "show-menu": toggle })}>
           <ul className="nav__list grid">
