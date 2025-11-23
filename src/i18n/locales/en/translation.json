@@ -27,7 +27,8 @@
     "title": "Skills",
     "subtitle": "My technical level",
     "frontend": "Frontend Development",
-    "backend": "Backend Development"
+    "backend": "Backend Development",
+    "skills":"Skills"
   },
   "services": {
     "title": "Services",
@@ -82,6 +83,7 @@
     "subtitle": "Contact Me",
     "talk_to_me": "Talk to me",
     "write": "Write me",
+    "instagram-follow-me":"Follow me",
     "write_proposal": "Write me your proposal",
     "name": "Name",
     "email": "Email",
