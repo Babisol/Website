@@ -4,16 +4,12 @@ import { useTranslation } from "react-i18next";
 
 const socialLinks = [
   {
-    href: "https://www.instagram.com/walderwin/",
+    href: "https://www.instagram.com/babak.gs/",
     icon: "bxl:instagram",
     label: "Instagram",
   },
-  {
-    href: "https://www.facebook.com/vladbuldenko",
-    icon: "bxl:facebook",
-    label: "Facebook",
-  },
-  { href: "https://github.com/vbuldenko", icon: "bxl:github", label: "GitHub" },
+  
+  { href: "https://github.com/babisol", icon: "bxl:github", label: "GitHub" },
 ];
 
 export default function Footer() {
@@ -21,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__container container">
-        <h1 className="footer__title">Buldenko</h1>
+        <h1 className="footer__title">Babak Soleimani</h1>
         <ul className="footer__list">
           {["about", "portfolio"].map((section) => (
             <li key={section}>
