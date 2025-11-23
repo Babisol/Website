@@ -18,7 +18,7 @@ interface ThemeProviderProps {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 function ThemeProvider({ children }: ThemeProviderProps) {
-  const defaultTheme = () => localStorage.getItem("color_scheme") || "light";
+  const defaultTheme = () => localStorage.getItem("color_scheme") || "dark";
   const [theme, setTheme] = useState<string>(defaultTheme);
 
   const toggleTheme = () => {
