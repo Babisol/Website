@@ -66,12 +66,6 @@
     },
     "viewBtn": "View More"
   },
-  "qualification": {
-    "title": "Qualification",
-    "subtitle": "My personal journey",
-    "education": "Education",
-    "experience": "Experience"
-  },
   "portfolio": {
     "title": "Portfolio",
     "subtitle": "List of my projects",
@@ -94,5 +88,45 @@
     "send_message": "Send Message",
     "invalid_email": "Invalid email address",
     "not_implemented": "Not implemented yet. Contact me using any social links mentioned previously!"
+  },
+    "qualification": {
+    "title": "Qualification",
+    "subtitle": "My personal journey",
+    "education": "Education",
+    "experience": "Experience",
+    "educationItems": [
+      {
+        "title": "Bachelor’s in Computer Science",
+        "subtitle": "Bergische Universität Wuppertal – Wuppertal, Germany",
+        "calendar": "April 2024 – Present"
+      },
+      {
+        "title": "Bachelor’s in Computer Engineering",
+        "subtitle": "Azad University of Bandar Anzali – Iran",
+        "calendar": "(2020 – 2021)"
+      },
+      {
+        "title": "High School Diploma (Abitur equivalent)",
+        "subtitle": "Shahid High School, Bandar Anzali, Iran",
+        "calendar": "2017 – 2020"
+      }
+    ],
+    "experienceItems": [
+      {
+        "title": "Kaufland – Wuppertal (Student Job)",
+        "subtitle": "Worked in the warehouse, at the checkout and in customer service in a dynamic team environment. Received a very positive work reference.",
+        "calendar": "Oct 2024 – Jan 2024"
+      },
+      {
+        "title": "University Project – Robotics, Bergische Universität Wuppertal",
+        "subtitle": "Developed the software for a robotic vehicle in a team. Implemented control via mobile devices and was responsible for the entire programming process.",
+        "calendar": "2025"
+      },
+      {
+        "title": "IT Training – Iran",
+        "subtitle": "Hands-on introduction to web development and programming. Learned HTML, JavaScript, C and C++. Built a solid foundation in software development.",
+        "calendar": "2016 – 2017"
+      }
+    ]
   }
 }

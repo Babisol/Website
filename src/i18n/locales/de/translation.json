@@ -1,99 +1,133 @@
 {
   "header": {
-    "home": "Головна",
-    "about": "Про мене",
-    "skills": "Навички",
-    "portfolio": "Портфоліо",
-    "contact": "Контакти"
+    "home": "Startseite",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
   },
   "home": {
-    "name": "Владислав Булденко",
-    "title": "Full Stack Developer",
-    "description": "Київ, Україна. Орієнтований на створення виняткових веб-рішень. Прагну професійного вдосконалення навичок створення масштабованих та ефективних застосунків",
-    "sayHelloBtn": "Написати",
-    "scrollDownBtn": "Прокрутити вниз"
+    "name": "Babak Soleimani",
+    "title": "Webentwickler",
+    "description": "Ich bin Babak, ein angehender Webentwickler mit einer starken Motivation, eine Ausbildung im IT-Bereich in Deutschland zu beginnen. Derzeit baue ich mir eine solide Grundlage in modernen Webtechnologien wie HTML, CSS, JavaScript, React und Node.js auf. Mein Ziel ist es, zu einem Entwickler zu wachsen, der zuverlässige, benutzerfreundliche und effiziente digitale Lösungen erstellt.",
+    "sayHelloBtn": "Sag Hallo!",
+    "scrollDownBtn": "Runterscrollen"
   },
   "about": {
-    "title": "Про мене",
-    "subtitle": "Коротка інформація",
+    "title": "Über mich",
+    "subtitle": "Meine Vorstellung",
     "info": {
-      "experience": "Досвід",
-      "completed": "Завершено"
+      "experience": "Erfahrung",
+      "completed": "Abgeschlossen"
     },
-    "description": "Full-stack розробник із приблизно річним досвідом створення веб-застосунків, використовуючи JavaScript, TypeScript, React, Redux, Express.js, PostgreSQL і MongoDB. Маю досвід наукових досліджень, звідки здобуту увагу до деталей зараз застосовую в розробці. Захоплююся створенням інтуїтивно зрозумілих і зручних для користувачів застосунків, а також постійно прагну навчатися та вдосконалюватися. Шукаю можливість для зростання, співпраці з досвідченими командами та роботи над значущими проєктами.",
-    "downloadCV": "Завантажити резюме"
+    "description": "Ich bin Babak, ein angehender Webentwickler mit einer starken Motivation, eine Ausbildung im IT-Bereich in Deutschland zu beginnen. Derzeit baue ich mir eine solide Grundlage in modernen Webtechnologien wie HTML, CSS, JavaScript, React und Node.js auf. Mein Ziel ist es, zu einem Entwickler zu werden, der zuverlässige, benutzerfreundliche und effiziente digitale Lösungen entwickelt.",
+    "downloadCV": "Lebenslauf herunterladen"
   },
   "skills": {
-    "title": "Навички",
-    "subtitle": "Мій технічний рівень",
-    "frontend": "Frontend Розробка",
-    "backend": "Backend Розробка"
+    "title": "Fähigkeiten",
+    "subtitle": "Mein technisches Niveau",
+    "frontend": "Frontend-Entwicklung",
+    "backend": "Backend-Entwicklung",
+    "skills": "Fähigkeiten"
   },
   "services": {
-    "title": "Послуги",
-    "subtitle": "Що я пропоную",
+    "title": "Dienstleistungen",
+    "subtitle": "Was ich anbiete",
     "app": {
-      "title": "Розробка веб-застосунків",
-      "subtitle": "Надання якісних веб-застосунків клієнтам та компаніям.",
+      "title": "Webanwendungs-Entwicklung",
+      "subtitle": "Entwicklung hochwertiger Webanwendungen für Kunden und Unternehmen.",
       "details": [
-        "Розробка адаптивних та динамічних веб-застосунків.",
-        "Використання сучасних бібліотек та фреймворків JavaScript, таких як React та Next.js.",
-        "Забезпечення сумісності з різними браузерами та оптимізація продуктивності.",
-        "Впровадження найкращих практик з безпеки та масштабованості.",
-        "Постійна інтеграція та розгортання."
+        "Entwicklung responsiver und dynamischer Webanwendungen.",
+        "Einsatz moderner JavaScript-Bibliotheken und Frameworks wie React und Next.js.",
+        "Sicherstellung von Cross-Browser-Kompatibilität und Leistungsoptimierung.",
+        "Implementierung von Best Practices für Sicherheit und Skalierbarkeit.",
+        "Kontinuierliche Integration und Deployment."
       ]
     },
     "api": {
-      "title": "Розробка та інтеграція API",
-      "subtitle": "Надання надійних послуг розробки та інтеграції API.",
+      "title": "API-Entwicklung und Integration",
+      "subtitle": "Bereitstellung stabiler API-Entwicklungs- und Integrationsservices.",
       "details": [
-        "Проектування та розробка RESTful API.",
-        "Інтеграція сторонніх API та сервісів.",
-        "Забезпечення безпечного та ефективного обміну даними.",
-        "Впровадження аутентифікації та авторизації.",
-        "Документація та тестування API."
+        "Entwurf und Entwicklung von RESTful APIs.",
+        "Integration externer APIs und Dienste.",
+        "Sicherstellung eines sicheren und effizienten Datenaustauschs.",
+        "Implementierung von Authentifizierung und Autorisierung.",
+        "API-Dokumentation und Testing."
       ]
     },
     "db": {
-      "title": "Проектування та управління базами даних",
-      "subtitle": "Надання комплексних послуг з проектування та управління базами даних.",
+      "title": "Datenbankdesign und -verwaltung",
+      "subtitle": "Umfassende Dienstleistungen rund um Datenbankdesign und Datenverwaltung.",
       "details": [
-        "Проектування баз даних для веб-застосунків.",
-        "Розробка оптимізованих схем баз даних.",
-        "Забезпечення надійності та безпеки даних.",
-        "Виконання операцій з резервним копіюванням та відновленням.",
-        "Моніторинг та оптимізація продуктивності."
+        "Entwurf relationaler und nicht-relationaler Datenbanken.",
+        "Implementierung von Backup- und Wiederherstellungslösungen.",
+        "Sicherstellung von Datenintegrität und Datensicherheit."
       ]
     },
-    "viewBtn": "Детальніше"
+    "viewBtn": "Mehr ansehen"
   },
   "qualification": {
-    "title": "Кваліфікація",
-    "subtitle": "Мій шлях досвіду",
-    "education": "Освіта",
-    "experience": "Досвід"
-  },
+    "title": "Qualifikationen",
+    "subtitle": "Mein persönlicher Werdegang",
+    "education": "Ausbildung",
+    "experience": "Erfahrung",
+    "educationItems": [
+      {
+        "title": "Bachelorstudium Informatik",
+        "subtitle": "Bergische Universität Wuppertal – Wuppertal, Deutschland",
+        "calendar": "April 2024 – heute"
+      },
+      {
+        "title": "Bachelorstudium Computer Engineering",
+        "subtitle": "Azad University of Bandar Anzali – Iran",
+        "calendar": "(2020 – 2021)"
+      },
+      {
+        "title": "Diplom (Abituräquivalent)",
+        "subtitle": "Shahid High School, Bandar Anzali, Iran",
+        "calendar": "2017 – 2020"
+      }
+    ],
+    "experienceItems": [
+      {
+        "title": "Kaufland – Wuppertal (Studentenjob)",
+        "subtitle": "Mitarbeit im Lager, an der Kasse und im Kundenservice in einem dynamischen Teamumfeld. Erhielt ein sehr positives Arbeitszeugnis.",
+        "calendar": "Okt 2024 – Jan 2024"
+      },
+      {
+        "title": "Universitätsprojekt – Robotik, Bergische Universität Wuppertal",
+        "subtitle": "Entwicklung der Software für ein Roboterfahrzeug im Team. Programmierung der Steuerung über mobile Geräte und Verantwortung für den gesamten Programmierprozess.",
+        "calendar": "2025"
+      },
+      {
+        "title": "IT-Training – Iran",
+        "subtitle": "Praktische Einführung in Webentwicklung und Programmierung. Erlernen von HTML, JavaScript, C und C++ sowie Aufbau grundlegender Kenntnisse in der Softwareentwicklung.",
+        "calendar": "2016 – 2017"
+      }
+    ]
+  }
+,
   "portfolio": {
-    "title": "Портфоліо",
-    "subtitle": "Мої останні проєкти",
-    "viewDemo": "Демо",
-    "viewCode": "Github"
+    "title": "Portfolio",
+    "subtitle": "Liste meiner Projekte",
+    "viewDemo": "Demo ansehen",
+    "viewCode": "Code ansehen"
   },
   "contacts": {
-    "title": "Контакти",
-    "subtitle": "Способи взаємодії",
-    "talk_to_me": "Звязатися зі мною",
-    "get_in_touch": "Зв'яжіться зі мною",
-    "write": "Написати",
-    "write_proposal": "Опишіть свою пропозицію",
-    "name": "Ім'я",
-    "email": "Електронна пошта",
-    "proposal": "Пропозиція",
-    "insert_name": "Введіть своє ім'я",
-    "insert_email": "Введіть свою електронну пошту",
-    "insert_proposal": "Введіть свою пропозицію",
-    "send_message": "Надіслати повідомлення",
-    "invalid_email": "Недійсна електронна адреса",
-    "not_implemented": "Ще не реалізовано. Зв'яжіться зі мною за допомогою будь-яких соціальних посилань, зазначених вище!"
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Schreib mir",
+    "talk_to_me": "Sprich mit mir",
+    "write": "Schreib mir",
+    "instagram-follow-me": "Folge mir",
+    "write_proposal": "Schreib mir deine Nachricht",
+    "name": "Name",
+    "email": "E-Mail",
+    "proposal": "Nachricht",
+    "insert_name": "Gib deinen Namen ein",
+    "insert_email": "Gib deine E-Mail ein",
+    "insert_proposal": "Gib deine Nachricht ein",
+    "send_message": "Nachricht senden",
+    "invalid_email": "Ungültige E-Mail-Adresse",
+    "not_implemented": "Noch nicht implementiert. Kontaktiere mich über meine Social-Media-Links!"
   }
 }

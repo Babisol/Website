@@ -42,38 +42,51 @@
 }
 
 :root.light-mode {
-  /* Light Color Scheme */
-  --hue: 0;
-  --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 20%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
-  --active-color: rgba(180, 127, 12, 0.9);
-  --container-color: #fff;
-  --shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-   --accent: rgba(0, 140, 255, 0.55);
-  --accent-2: rgba(180, 80, 255, 0.55);
-  --blob-opacity: 0.6;
-  --blob-blend: normal;
+  /* Light Color Scheme – soft colorful UI */
+  --hue: 220;
+  --sat: 15%;
+
+  /* Slightly tinted text & titles */
+  --title-color: hsl(222, 28%, 18%);
+  --title-color-dark: hsl(222, 40%, 10%);
+  --text-color: hsl(222, 16%, 38%);
+
+  /* Not pure white anymore: gentle lilac/cream mix */
+  --body-color: #f5f2ff;          /* soft lavender white */
+  --container-color: #ffffff;     /* cards stay clean */
+
+  --active-color: #e19a2d;        /* warm golden highlight */
+  --shadow: 0 0 10px rgba(40, 40, 80, 0.13);
+
+  /* Light-mode blob: cool + playful */
+  --accent: rgba(0, 140, 255, 0.7);      /* blue */
+  --accent-2: rgba(180, 80, 255, 0.7);   /* purple */
+  --blob-opacity: 0.65;
+  --blob-blend: multiply;
 }
+
 
 :root.dark-mode {
-  /* Dark Color Scheme */
-  --title-color: rgba(255, 255, 255, 0.95);
-  --title-color-dark: rgba(176, 198, 255, 0.8);
-  --text-color: rgb(214, 219, 235);
-  --body-color: #050816;              /* darker = better neon contrast */
-  --active-color: rgba(255, 223, 127, 0.95);
-  --container-color: #0b1220;
-  --shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+  /* Dark Color Scheme – Persian carpet / old red-brown */
+  --title-color: rgba(255, 246, 235, 0.96);
+  --title-color-dark: rgba(241, 210, 180, 0.9);
+  --text-color: rgba(232, 214, 198, 0.9);
 
-  /* Neon accents */
-  --accent: #36e4ff;      /* electric cyan */
-  --accent-2: #c084ff;    /* neon purple */
-  --blob-opacity: 0.7;
+  /* deep brown / dark red base */
+  --body-color: #120708;             /* almost black with wine undertone */
+  --container-color: #1b1011;        /* darker cards, like worn leather */
+
+  --active-color: #e2b56a;           /* muted gold accent */
+  --shadow: 0 0 14px rgba(0, 0, 0, 0.85);
+
+  /* Carpet-like warm accents for blob & details */
+  --accent: #b43a3a;                 /* deep pomegranate red */
+  --accent-2: #d89a4a;               /* old gold / ochre */
+
+  --blob-opacity: 0.55;
   --blob-blend: screen;
 }
+
 
 
 
@@ -132,6 +145,41 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
 }
+/* Light-mode background: colorful but soft */
+.light-mode body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+
+  background-image:
+    /* warm sunrise in top-left */
+    radial-gradient(circle at 8% 0%, rgba(255, 214, 170, 0.9), transparent 60%),
+    /* cool blue in top-right */
+    radial-gradient(circle at 90% 10%, rgba(170, 206, 255, 0.9), transparent 60%),
+    /* soft magenta at bottom-left */
+    radial-gradient(circle at 0% 100%, rgba(255, 190, 230, 0.75), transparent 60%),
+    /* neutral bright center to keep content readable */
+    radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 1), transparent 70%);
+
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Dark-mode only background texture */
+.dark-mode body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+
+  /* deep vignette + subtle color variation */
+  background-image:
+    radial-gradient(circle at 20% 0%, rgba(139, 0, 0, 0.25), transparent 55%),
+    radial-gradient(circle at 80% 100%, rgba(97, 46, 18, 0.25), transparent 55%),
+    radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.65), transparent 70%);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Persian-carpet-ish pattern & particles overlay */
+
 
 h1,
 h2,
@@ -289,15 +337,17 @@ img {
   mix-blend-mode: var(--blob-blend, screen);
   z-index: 9999;
 
+  /* warm, carpet-like glow instead of neon blue/purple */
   box-shadow:
-    0 0 60px rgba(54, 228, 255, 0.75),
-    0 0 120px rgba(192, 132, 255, 0.75);
+    0 0 60px rgba(180, 58, 58, 0.7),
+    0 0 110px rgba(216, 154, 74, 0.6);
 
   transition:
     opacity 0.3s ease,
     background 0.3s ease,
     filter 0.3s ease;
 }
+
 /* === Storm overlay base (as before) === */
 .storm-overlay {
   position: fixed;
@@ -394,5 +444,69 @@ img {
 
 
 
+
+
+.carpet-texture {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -2; /* behind everything */
+}
+
+/* Only apply texture in dark mode */
+.dark-mode .carpet-texture {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -2;
+
+  /* Deep dark red base */
+  background-color: #0b0204;
+
+  /* Micro texture: small PS5-style dimples + fine diagonal cross-hatch */
+  background-image:
+    /* smaller circular “dimples” */
+    radial-gradient(
+      circle at 1px 1px,
+      rgba(255, 215, 190, 0.07) 0,
+      rgba(255, 215, 190, 0.07) 0.6px,
+      transparent 0.6px,
+      transparent 10px
+    ),
+    radial-gradient(
+      circle at 6px 6px,
+      rgba(255, 210, 180, 0.05) 0,
+      rgba(255, 210, 180, 0.05) 0.6px,
+      transparent 0.6px,
+      transparent 10px
+    ),
+
+    /* finer cross-hatch */
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 170, 140, 0.045) 0,
+      rgba(255, 170, 140, 0.045) 0.7px,
+      transparent 0.7px,
+      transparent 15px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(120, 40, 40, 0.065) 0,
+      rgba(120, 40, 40, 0.065) 0.7px,
+      transparent 0.7px,
+      transparent 15px
+    );
+
+  /* Smaller tiles = finer detail */
+  background-size:
+    6px 6px,
+    6px 6px,
+    12px 12px,
+    12px 12px;
+
+  background-attachment: fixed;
+  opacity: 0.75;
+  mix-blend-mode: normal;
+}
 
 

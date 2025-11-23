@@ -13,7 +13,7 @@
   font-weight: var(--font-medium);
   color: var(--title-color);
   margin: 0 var(--mb-1);
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .qualification__button:hover {
@@ -31,7 +31,7 @@
 
 .qualification__sections {
   display: grid;
-  grid-template-columns: 0.5fr;
+  grid-template-columns: 1.5fr;
   justify-content: center;
 }
 

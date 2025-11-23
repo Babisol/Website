@@ -34,7 +34,7 @@
   display: inline-flex;
   align-items: center;
   column-gap: 0.25rem;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .services__button-icon {
@@ -77,7 +77,7 @@
   right: 1.5rem;
   font-size: 1.5rem;
   color: var(--title-color);
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .services__modal-title,
