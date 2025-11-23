@@ -1,0 +1,66 @@
+%h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.01em;
+  font-weight: 800;
+
+  @include on-tablet {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+%h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0;
+  font-weight: 600;
+
+  @include on-tablet {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.01em;
+  }
+}
+%h3 {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  letter-spacing: 0;
+  font-weight: 600;
+
+  @include on-tablet {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+}
+%h4 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: 0;
+  font-weight: 600;
+
+  @include on-tablet {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+
+%button {
+  font-size: 0.875rem;
+  line-height: 1.3rem;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+%body-text {
+  font-size: 0.875rem;
+  line-height: 1.3rem;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+%small-text {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0;
+  font-weight: 700;
+}

@@ -1,0 +1,96 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "home": {
+    "name": "Babak Soleimani",
+    "title": "Web Developer",
+    "description": "I’m Babak, an aspiring Web Developer with a strong motivation to start an Ausbildung in the IT field in Germany. I’m currently building a solid foundation in modern web technologies such as HTML, CSS, JavaScript, React, and Node.js. My goal is to grow into a professional who can develop reliable, user-friendly, and efficient digital solutions.",
+    "sayHelloBtn": "Say Hello!",
+    "scrollDownBtn": "Scroll Down"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "My introduction",
+    "info": {
+      "experience": "Experience",
+      "completed": "Completed"
+    },
+    "description": "I’m Babak, an aspiring Web Developer with a strong motivation to start an Ausbildung in the IT field in Germany. I’m currently building a solid foundation in modern web technologies such as HTML, CSS, JavaScript, React, and Node.js. My goal is to grow into a professional who can develop reliable, user-friendly, and efficient digital solutions.",
+    "downloadCV": "Download CV"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "My technical level",
+    "frontend": "Frontend Development",
+    "backend": "Backend Development"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I offer",
+    "app": {
+      "title": "Web Application Development",
+      "subtitle": "Providing quality web applications to clients and companies.",
+      "details": [
+        "Developing responsive and dynamic web applications.",
+        "Using modern JavaScript libraries and frameworks like React and Next.js.",
+        "Ensuring cross-browser compatibility and performance optimization.",
+        "Implementing best practices for security and scalability.",
+        "Continuous integration and deployment."
+      ]
+    },
+    "api": {
+      "title": "API Development and Integration",
+      "subtitle": "Providing robust API development and integration services.",
+      "details": [
+        "Designing and developing RESTful APIs.",
+        "Integrating third-party APIs and services.",
+        "Ensuring secure and efficient data exchange.",
+        "Implementing authentication and authorization.",
+        "API documentation and testing."
+      ]
+    },
+    "db": {
+      "title": "Database Design and Management",
+      "subtitle": "Providing comprehensive database design and management services.",
+      "details": [
+        "Designing relational and non-relational databases.",
+        "Implementing data backup and recovery solutions.",
+        "Ensuring data integrity and security."
+      ]
+    },
+    "viewBtn": "View More"
+  },
+  "qualification": {
+    "title": "Qualification",
+    "subtitle": "My personal journey",
+    "education": "Education",
+    "experience": "Experience"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "List of my projects",
+    "viewDemo": "View Demo",
+    "viewCode": "View Code"
+  },
+  "contacts": {
+    "title": "Get in touch",
+    "subtitle": "Contact Me",
+    "talk_to_me": "Talk to me",
+    "write": "Write me",
+    "write_proposal": "Write me your proposal",
+    "name": "Name",
+    "email": "Email",
+    "proposal": "Proposal",
+    "insert_name": "Insert your name",
+    "insert_email": "Insert your email",
+    "insert_proposal": "Insert your proposal",
+    "send_message": "Send Message",
+    "invalid_email": "Invalid email address",
+    "not_implemented": "Not implemented yet. Contact me using any social links mentioned previously!"
+  }
+}

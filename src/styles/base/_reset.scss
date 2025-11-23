@@ -1,0 +1,77 @@
+/* Box-sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling */
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/* Set default styles for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Remove default styles for links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove default button styles */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Set smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Inherit line-height and color for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
