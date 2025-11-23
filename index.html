@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Babak Soleimani – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio von Babak Soleimani – Webentwicklung, Programmierung, Robotics."/>
+</head>
+<body>
+  <!-- Custom cursor blob -->
+  <div class="cursor-blob" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="logo" href="#top">BS</a>
+    <nav>
+      <a href="#about" class="magnet">Über mich</a>
+      <a href="#projects" class="magnet">Projekte</a>
+      <a href="#contact" class="btn primary magnet">Kontakt</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" data-parallax>
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__content">
+        <h1>
+          <span class="accent">Hi, ich bin Babak.</span><br/>
+          Ich baue elegante <em>Web- & App-Erlebnisse</em>.
+        </h1>
+        <p>
+          IT-Student & angehender Fachinformatiker für Anwendungsentwicklung. Fokus auf
+          performante UIs, sauberen Code und kleine, nützliche Tools.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn magnet">Projekte ansehen</a>
+          <a href="#contact" class="btn ghost magnet">Kontakt aufnehmen</a>
+        </div>
+        <ul class="badges">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Arduino/ESP32</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section__head">
+        <h2>Über mich</h2>
+        <p>Kurz & bündig</p>
+      </div>
+      <div class="about__grid">
+        <article class="card tilt">
+          <h3>Was mich antreibt</h3>
+          <p>Probleme präzise lösen, UX polieren und Dinge shippen. Ich mag Clean Code, kleine Iterationen und messbare Verbesserungen.</p>
+        </article>
+        <article class="card tilt">
+          <h3>Stack</h3>
+          <ul class="tags">
+            <li>Vanilla JS</li><li>DOM APIs</li><li>REST/JSON</li><li>Git/GitHub</li>
+          </ul>
+          <p>Basis solide, Fokus auf Verständnis statt Framework-Magie.</p>
+        </article>
+        <article class="card tilt">
+          <h3>Soft Skills</h3>
+          <ul class="ticks">
+            <li>Kommunikation klar</li>
+            <li>Eigenverantwortung</li>
+            <li>Lernen & Dokumentieren</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS --> 
+      
+  aria-hidden="true"></i>
+    <section id="projects" class="section">
+      <div class="section__head">
+        <h2>Projekte</h2>
+        <p>Klein, sauber, nachvollziehbar</p>
+      </div>
+
+      <div class="projects">
+        <!-- Project 1 -->
+        <article class="project card tilt shine">
+          <div class="project__links">
+        <a class="btn sm magnet" href="projects/calculator/index.html">Live</a>
+        <a class="btn sm ghost magnet" href="https://github.com/Babisol/babak-portfolio/tree/main/projects/calculator">Code</a>
+          </div>
+
+          <p>Ein schlanker, zugänglicher Rechner mit Tastatur-Support und sauberen Funktionen.</p>
+          <div class="project__links">
+            <a class="btn sm magnet" href="#" aria-disabled="true">Live (bald)</a>
+            <a class="btn sm ghost magnet" href="#" aria-disabled="true">Code (bald)</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project card tilt shine">
+          <div class="project__links">
+        <a class="btn sm magnet" href="projects/todo/index.html">Live</a>
+        <a class="btn sm ghost magnet" href="https://github.com/Babisol/babak-portfolio/tree/main/projects/todo">Code</a>
+            </div>
+
+          <p>Tasks mit LocalStorage, Filter, Keyboard-Shortcuts und minimalistischer UI.</p>
+          <div class="project__links">
+            <a class="btn sm magnet" href="#" aria-disabled="true">Live (bald)</a>
+            <a class="btn sm ghost magnet" href="#" aria-disabled="true">Code (bald)</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project card tilt shine">
+          <div class="project__head">
+            <h3>ESP32 LED Control</h3>
+            <span class="pill">Arduino</span>
+          </div>
+          <p>Einfacher Webserver auf ESP32 zur LED-Steuerung – zeigt Hardware↔Web-Brücke.</p>
+          <div class="project__links">
+            <a class="btn sm magnet" href="#" aria-disabled="true">Demo (bald)</a>
+            <a class="btn sm ghost magnet" href="#" aria-disabled="true">Code (bald)</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section__head">
+        <h2>Kontakt</h2>
+        <p>Schreib mir gern</p>
+      </div>
+      <div class="contact card">
+        <p>📧 <a href="mailto:babak@example.com" class="link magnet">babak@example.com</a></p>
+        <p>📍 Wuppertal, Deutschland</p>
+        <p class="muted">Impressum auf Anfrage • Antworten meist innerhalb 24h</p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
