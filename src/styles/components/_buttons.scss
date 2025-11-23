@@ -1,0 +1,13 @@
+button.primary {
+  @extend %button;
+  color: white;
+  background-color: blue;
+}
+
+button.secondary {
+  @extend %button;
+  color: blue;
+  background-color: transparent;
+  border: 1px solid blue;
+}
+// examples for extend use
