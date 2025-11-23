@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 import Info from "./Info.js";
 import "./about.css";
 import vbImage from "../../assets/images/vb.jpg";
-import CV from "../../assets/CV_Vladyslav_Buldenko_FE.pdf";
+import CV from "../../assets/babak-soleimani-cv-de.pdf";
 import { useTranslation } from "react-i18next";
 
 export default function About() {

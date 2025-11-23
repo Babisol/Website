@@ -1,5 +1,5 @@
 .skills__container {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   column-gap: 1.8rem;
   justify-content: center;
 }
